@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Assignment 1</title>
+   <link rel="stylesheet" href="assignment1.css" />
+</head>
+<body>
+<form method = "get" action = "http://kunz-pc.sce.carleton.ca/sysc4504/process.php" >
+    <fieldset>
+       <legend align="center"><h3>Advanced Art Work Search</h3></legend>
+
+        <div id="searchBox">
+          <input type="text" name="titles" placeholder="Search titles" style="width: 400px;"/>
+          <label>Subject: </label>
+          <input type="radio" name="subject" value="1">History
+          <input type="radio" name="subject" value="2">Person
+          <input type="radio" name="subject" value="3">Landscape
+          <select name = "genre" style="margin-right: 0px;">
+            <option value ="0" disabled selected>Select Genre</option>
+            <option value ="1">Baroque</option>
+            <option value ="2">Renaissance</option>
+            <option value ="3">Realism</option>
+          </select>
+          <input type="submit" value="Filter" style="margin-left: 0px; height: 20px;">
+        </div>
+
+        <div id="settingsBox">
+          <select name = "bulk actions" style="margin-right: 0px;">
+            <option value ="0" disabled selected>Bulk Actions</option>
+            <option value ="1">Archive</option>
+            <option value ="2">Edit</option>
+            <option value ="3">Delete</option>
+            <option value ="4">Collection</option>
+          </select>
+          <input type="submit" value="Apply to All" style="margin-left: 0px; height: 20px;">
+        </div>
+
+        <div id="paintingBox">
+          <table id = "paintings">
+            <tr>
+              <caption COLSPAN="7">
+                 <h3>Paintings</h3>
+              </caption>
+            </tr>
+            <tr class="divider" align="left">
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col">Title</th>
+              <th scope="col">Artist</th>
+              <th scope="col">Year</th>
+              <th scope="col">Genre</th>
+              <th scope="col">Actions</th>
+            </tr>
+            <tr>
+              <td scope="col"><input type="checkbox" name="index[]" value="1" />&nbsp;</td>
+              <td scope="col"><img src="images/05030.jpg" alt="pic1" class="mainImg"></td>
+              <td scope="col"><i>Death of Marat</i></td>
+              <td scope="col">David, Jacques-Louis</td>
+              <td scope="col">1793</td>
+              <td scope="col">Romanticism</td>
+              <td scope="col">
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/archive.png" alt="action1">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/collection.png" alt="action2">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/delete.png" alt="action3">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/edit.png" alt="action4">
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="col"><input type="checkbox" name="index[]" value="2" />&nbsp;</td>
+              <td scope="col"><img src="images/06010.jpg" alt="pic2" class="mainImg"></td>
+              <td scope="col"><i>Portrait of Eleanor of Toledo</i></td>
+              <td scope="col">Bronzino, Agnolo</td>
+              <td scope="col">1545</td>
+              <td scope="col">Mannerism</td>
+              <td scope="col">
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/archive.png" alt="action1">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/collection.png" alt="action2">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/delete.png" alt="action3">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/edit.png" alt="action4">
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="col"><input type="checkbox" name="index[]" value="3" />&nbsp;</td>
+              <td scope="col"><img src="images/07020.jpg" alt="pic3" class="mainImg"></td>
+              <td scope="col"><i>Liberty Leading the People</i></td>
+              <td scope="col">Delacroix, Eugene</td>
+              <td scope="col">1830</td>
+              <td scope="col">Romanticism</td>
+              <td scope="col">
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/archive.png" alt="action1">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/collection.png" alt="action2">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/delete.png" alt="action3">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/edit.png" alt="action4">
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="col"><input type="checkbox" name="index[]" value="4" />&nbsp;</td>
+              <td scope="col"><img src="images/13030.jpg" alt="pic4" class="mainImg"></td>
+              <td scope="col"><i>Arrangement in Grey and Black</i></td>
+              <td scope="col">Whistler, James Abbott</td>
+              <td scope="col">1871</td>
+              <td scope="col">Realism</td>
+              <td scope="col">
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/archive.png" alt="action1">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/collection.png" alt="action2">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/delete.png" alt="action3">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/edit.png" alt="action4">
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="col"><input type="checkbox" name="index[]" value="5" />&nbsp;</td>
+              <td scope="col"><img src="images/120010.jpg" alt="pic5" class="mainImg"></td>
+              <td scope="col"><i>Madmoiselle Caroline Riviere</i></td>
+              <td scope="col">Ingres, Jean-Auguste</td>
+              <td scope="col">1806</td>
+              <td scope="col">Neo-Classicism</td>
+              <td scope="col">
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/archive.png" alt="action1">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/collection.png" alt="action2">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/delete.png" alt="action3">
+                </button>
+                <button type="button" onclick="window.location.href='#'">
+                  <img src="images/edit.png" alt="action4">
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

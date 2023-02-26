@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+/* general text formatting */
+
+h1, h2, h3, nav, footer {
+ font-family: 'Merriweather', serif;
+}
+body {
+   font-family: 'Open Sans', Arial, sans-serif;
+   font-size: 16px;
+}
+
+
+legend {
+   background-color: #616161 ;
+   color: white;
+   width: 1300px;
+}
+fieldset {
+   margin: 1em auto;
+   background-color: #F5F5F5;
+
+}
+
+div#searchBox, div#settingsBox, div#paintingBox {
+   margin: 0.25em auto;
+   background-color: #E0E0E0;
+   border: 1pt solid #616161;
+
+}
+div#searchBox { margin-top: 1em; }
+div#paintingBox {
+   background-color: #EEEEEE;
+
+}
+
+
+th {
+   background-color: #E0E0E0;
+   padding-left: 15px;
+}
+
+caption {
+   background-color: #BDBDBD;
+
+}
+
+input, select {
+  margin: 10px;
+
+}
+
+input.radio {
+  display: inline;
+
+}
+
+table {
+  margin: 10px;
+  border-collapse: collapse;
+}
+
+tr {
+  border: solid;
+  border-width: 1px 0;
+}
+
+td {
+  padding:0 15px;
+}
+
+img{
+  margin: 5px;
+}
+
+.mainImg {
+   padding: 1px;
+   border:1px solid #021a40;
+}
